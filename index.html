@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=brave">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
     <title>Ana sayfa | Portföy</title>
 </head>
 <body>
-    <header>
-        <div class="header-img">
-            <img width="1280" src="img\header.png" alt="HeaderIMG">
+    
+    <header class="container">
+        <div class="header-profile">
+            <img class="round-img" width="256" src="img/favicon.jpg" alt="HeaderIMG" style="float:left">
+            <h2 style="float:right;  margin-top: 100px; margin-left: 25px; margin-right: 25px;">Bir geliştiricinin alanı...</h2>
         </div>
+        <nav class="header-nav">
+            <a href="projects.html">Projelerim</a> - <a href="#lang">Diller</a>
+        </nav>
     </header>
-    <hr>
-    <nav>
-        <a href="projects.html">Projelerim</a> - <a href="#lang">Diller</a>
-    </nav>
-    <hr>
 
     <main>
         <!-- Diller kısmı -->  
         <div class="language" id="lang">
             <h2>Öğrenmeye hevesli olduğum diller!</h2>
+            <hr>
             <ul>
                 <a target="_blank" href="https://kotlinlang.org/"><li>Kotlin</li></a>
                 <a target="_blank" href="https://flutter.dev/"><li>Dart & Flutter</li></a>
@@ -29,8 +32,9 @@
 
         </div>
     </main>
-    <footer>
-        <div>
+
+    <footer class="container">
+        <div class="col-md-4">
             <h2>Hakkımda</h2>
             <h3>Mustafa Yavuz OKUMUŞ</h3>
             <p>Yeni şeyler yapmayı ve keşfetmeyi,<br>bunları yaparkende <strong>paylaşmak</strong> hoşuma gidiyor. 😊
@@ -40,13 +44,13 @@
             </ul>
             
             <!-- Sosyal medya -->
-            <ul>
+            <ul class="align-li">
                 <li><a target="_blank" href="https://twitter.com/OverBrave_"><img width="24" src="img\social media\twitter.png" alt="Twitter Icon"></a></li>
                 <li><a target="_blank" href="https://www.instagram.com/myavuzokumus/"><img width="24" src="img\social media\instagram.webp" alt="Instagram Icon"></a></li>
             </ul> 
         </div>
         <div>
-            <img width="256" src="img\lavanta.jpeg" alt="Footer logo"></a>
+            <a target="_blank" href="https://sc-riber.games"><img width="256" src="img\sclogo.png" alt="Footer logo"></a>
         </div>
     </footer>
 </body>

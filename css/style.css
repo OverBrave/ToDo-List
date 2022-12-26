@@ -1,0 +1,55 @@
+
+/* Fontlar */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
+
+body {
+    background: rgb(42, 40, 40);
+    color: white;
+    font-family: 'Mitr', sans-serif;
+    margin: 0;
+    line-height: inherit;
+}
+
+footer {
+    
+    text-align: center;
+    background-image: linear-gradient(rgba(42, 40, 40), rgba(59, 104, 120, 0.5)), url("/img/footer.png");
+    background-repeat: no-repeat;
+    background-size: 111% 120%;
+    padding-right: 150px;
+    /* background: rgb(253, 253, 253); */
+}
+
+.header-profile {
+    border-style: inset;
+    margin-top: 50px;
+}
+
+/*Kenar yumuşatma*/
+.round-img {
+    border-radius: 0.375rem;
+}
+
+.header-nav {
+    margin-left: 375px;
+    padding-right: 125px;
+    margin-top: 75px;
+}
+
+.container { 
+    align-items: center; 
+    display: flex;
+    justify-content: center;
+    list-style-position: inside;
+}
+
+.align-li li {
+    display: inline-block;
+    width: 5%;
+}
+
+.col-md-4 {
+    width: 50%;
+    position: relative;
+}
