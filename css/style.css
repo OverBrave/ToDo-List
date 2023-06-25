@@ -1,55 +1,108 @@
-
-/* Fontlar */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
-
-body {
-    background: rgb(42, 40, 40);
-    color: white;
-    font-family: 'Mitr', sans-serif;
-    margin: 0;
-    line-height: inherit;
+* {
+  box-sizing: border-box;
 }
 
-footer {
-    
-    text-align: center;
-    background-image: linear-gradient(rgba(42, 40, 40), rgba(59, 104, 120, 0.5)), url("/img/footer.png");
-    background-repeat: no-repeat;
-    background-size: 111% 120%;
-    padding-right: 150px;
-    /* background: rgb(253, 253, 253); */
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-.header-profile {
-    border-style: inset;
-    margin-top: 50px;
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  margin-left: -32px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  list-style-type: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-/*Kenar yumuşatma*/
-.round-img {
-    border-radius: 0.375rem;
+ul li:nth-child(odd) {
+  background: #f9f9f9;
 }
 
-.header-nav {
-    margin-left: 375px;
-    padding-right: 125px;
-    margin-top: 75px;
+ul li:hover {
+  background: #ddd;
 }
 
-.container { 
-    align-items: center; 
-    display: flex;
-    justify-content: center;
-    list-style-position: inside;
+ul li.checked {
+  background: #276678;
+  color: #fff;
+  text-decoration: line-through;
 }
 
-.align-li li {
-    display: inline-block;
-    width: 5%;
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
 }
 
-.col-md-4 {
-    width: 50%;
-    position: relative;
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f78501;
+  color: white;
+
+}
+
+.header {
+  background-color: #4378cd;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+img {
+  width: 15%;
+  height: auto;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+.button {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.button:hover {
+  background-color: #bbb;
 }

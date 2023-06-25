@@ -1,57 +1,37 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=brave">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
-    <title>Ana sayfa | Portföy</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Yapılacaklar Listesi</title>
+  </head>
+  <body>
     
-    <header class="container">
-        <div class="header-profile">
-            <img class="round-img" width="256" src="img/favicon.jpg" alt="HeaderIMG" style="float:left">
-            <h2 style="float:right;  margin-top: 100px; margin-left: 25px; margin-right: 25px;">Bir geliştiricinin alanı...</h2>
-        </div>
-        <nav class="header-nav">
-            <a href="projects.html">Projelerim</a> - <a href="#lang">Diller</a>
-        </nav>
-    </header>
-
-    <main>
-        <!-- Diller kısmı -->  
-        <div class="language" id="lang">
-            <h2>Öğrenmeye hevesli olduğum diller!</h2>
-            <hr>
-            <ul>
-                <a target="_blank" href="https://kotlinlang.org/"><li>Kotlin</li></a>
-                <a target="_blank" href="https://flutter.dev/"><li>Dart & Flutter</li></a>
-            </ul>
-
-        </div>
-    </main>
-
-    <footer class="container">
-        <div class="col-md-4">
-            <h2>Hakkımda</h2>
-            <h3>Mustafa Yavuz OKUMUŞ</h3>
-            <p>Yeni şeyler yapmayı ve keşfetmeyi,<br>bunları yaparkende <strong>paylaşmak</strong> hoşuma gidiyor. 😊
-            <ul>
-                <li>3 August 2001 - Явуз</li>
-                <li>İKÜ Math-Comp</li>
-            </ul>
-            
-            <!-- Sosyal medya -->
-            <ul class="align-li">
-                <li><a target="_blank" href="https://twitter.com/OverBrave_"><img width="24" src="img\social media\twitter.png" alt="Twitter Icon"></a></li>
-                <li><a target="_blank" href="https://www.instagram.com/myavuzokumus/"><img width="24" src="img\social media\instagram.webp" alt="Instagram Icon"></a></li>
-            </ul> 
-        </div>
-        <div>
-            <a target="_blank" href="https://sc-riber.games"><img width="256" src="img\sclogo.png" alt="Footer logo"></a>
-        </div>
-    </footer>
-</body>
+    <div id="alert" class="position-absolute mt-5 me-5 top-0 end-0"></div>
+    <div class="container">
+      <div class="header">
+        <img 
+          src="sclogo.png"
+          class="mb-1"
+          alt=""/>
+        <h2>Yapılacaklar Listesi</h2>
+        <input type="text" id="task" placeholder="Bugün ne yapacaksın?"/>
+        <span onclick="newElement()" id="liveToastBtn" class="button">Ekle</span>
+        
+      </div>
+      
+      <ul onclick="taskCompleted()" id="list">
+        <li>3 Litre Su İç<button type="button" class="btn-close close" aria-label="Close"></button></li>
+        <li>Ödevleri Yap<button type="button" class="btn-close close" aria-label="Close"></button></li>
+        <li>En Az 3 Saat Kodlama Yap<button type="button" class="btn-close close" aria-label="Close"></button></li>
+        <li>Yemek Yap<button type="button" class="btn-close close" aria-label="Close"></button></li>
+        <li>50 Sayfa Kitap Oku<button type="button" class="btn-close close" aria-label="Close"></button></li>
+      </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="assignment-2.js" crossorigin="anonymous"></script>
+  </body>
 </html>
