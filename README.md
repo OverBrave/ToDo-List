@@ -1,11 +1,11 @@
-# Kodluyoruz Ilk Repo
+# ToDo-List
+With this web application, you can save casual plan and you can make it easily without struggle any problem.
+It's my first JavaScript application on Web site.
 
-Bu repo [Kodluyoruz](https://www.kodluyoruz.org) Front-End Eğitiminde oluşturduğumuz çalışma ortamım.
+If you wanna change or improve something, you can open the issue.
 
-![github](img/sitess.png)
+Thanks for interest!
 
-## Contributing
-Pull requestler kabul edilir. Büyük değişiklikler için, lütfen önce neyi değiştirmek istediğinizi tartışmak için bir konu açınız.
+(Bootstrap v5.2 is used on this project.)
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+![image](https://github.com/OverBrave/ToDoList/assets/47111280/6831adf3-b2fb-42a2-91b0-83f6d1b54f48)
